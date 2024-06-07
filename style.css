@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* start container-head */
+.container-head {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-head .p1 {
+    font-weight: 200;
+    font-size: 28px;
+    color: hsl(234, 12%, 34%);
+}
+.container-head h1 {
+    font-weight: 600;
+    font-size: 28px;
+    color: hsl(234, 12%, 34%);
+}
+.container-head .p2 {
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+/* End container-head  */
+/* start container-body  */
+.container-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cart {
+    width: 280px;
+    height: auto;
+    padding: 23px 25px 20px 25px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 5px 10px 0px rgba(216, 226, 238, 0.75);
+    border-top: 3px solid transparent;
+}
+.cart:hover {
+    transform: translateY(5%);
+    transition: 500ms;
+}
+.column1 .cart:nth-child(1) {
+    border-color: hsl(180, 62%, 55%);
+}
+.column2 .cart:nth-child(1) {
+    border-color: hsl(0, 78%, 62%);
+}
+.column2 .cart:nth-child(2) {
+    border-color: hsl(34, 97%, 64%);
+    margin-top: 15px;
+}
+.column3 .cart:nth-child(1) {
+    border-color: hsl(212, 86%, 64%);
+}
+.cart h3 {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: hsl(234, 12%, 34%);
+}
+.cart p {
+    font-weight: 300;
+    font-size: 11px;
+}
+.icon {
+    width: 47px;
+    margin-top: 30px;
+    margin-left: 185px;
+}
+img {
+    width: 100%;
+}
+/* start container-body  */
+/* mobaile screen */
+@media screen and (max-width: 395px) {
+    .container-head {
+        width: 300px;  
+        margin: 60px 0px;
+    }
+    .container-head .p1 {
+        font-size: 23px;
+        font-weight: 300;
+    }
+    .container-head h1 {
+        font-size: 23px;
+    }
+    .container-head .p2 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .container-body {
+        flex-direction: column;
+    }
+    .column2 .cart:nth-child(2) {
+        margin-top: 20px;
+    }
+    .cart h3 {
+        font-size: 20px;
+    }
+    .cart p {
+        font-weight: 300;
+        font-size: 12px;
+        color: hsl(229, 6%, 66%);
+    }
+    footer .attribution {
+        font-size: 8px;
+    }
+}
